@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Border Margin Padding</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: wheat;
+      }
+
+      header {
+        border: blue solid 3px;
+        border-bottom: darkblue ridge 10px;
+      }
+
+      h1 {
+        border-bottom: blue dotted 3px;
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      h2 {
+        border: #48f groove 5px;
+        outline: black ridge 5px;
+        margin: 30px;
+        padding: 5px 10px;
+        width: 200px;
+        border-radius: 10px;
+      }
+
+      .paragraph1 {
+        border: rgb(119, 67, 169) dotted 8px;
+        border-top-right-radius: 25%;
+        border-bottom-left-radius: 25%;
+        margin: 20px 20px;
+        padding: 10px 20px 5px;
+        text-align: center;
+        outline: purple dashed 10px;
+        max-width: 500px;
+        background-color: azure;
+      }
+
+      .paragraph2 {
+        border: rgb(127, 179, 56) solid 8px;
+        margin: 20px 20px;
+        padding: 10px 20px 5px;
+        text-align: center;
+        outline: purple solid 10px;
+        max-width: 500px;
+      }
+
+      footer {
+        border: purple dashed 5px;
+        margin: 0 auto;
+        font-size: 14px;
+        text-align: center;
+        width: fit-content;
+        padding: 0 10px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Border Margin Padding</h1>
+      <p class="paragraph1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eum
+        fugit asperiores doloremque quas sapiente in minus provident consectetur
+        molestiae.
+      </p>
+    </header>
+    <main>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p class="paragraph2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eum
+        fugit asperiores doloremque quas sapiente in minus provident consectetur
+        molestiae.
+      </p>
+    </main>
+    <footer>
+      <h3>Thank you for visiting my site</h3>
+    </footer>
+  </body>
+</html>

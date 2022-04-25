@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+      main {
+        border: 2px #888 solid;
+        width: 800px;
+        margin: 20px auto;
+        padding-bottom: 55px;
+      }
+
+      table,
+      td,
+      th {
+        font-size: 13px;
+        border: 2px solid #888;
+        border-collapse: collapse;
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      table {
+        margin: 0 auto;
+        width: 725px;
+        height: 296px;
+      }
+
+      table {
+        border: 5px outset grey;
+      }
+
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- Header -->
+      <h1>TIME TABLE</h1>
+      <!-- Table -->
+      <table>
+        <!-- Day/Period Row -->
+        <tr>
+          <th style="vertical-align: bottom; padding-bottom: 3px; height: 10px">
+            Day/Period
+          </th>
+          <th>I <br />9:30-10:20</th>
+          <th>II <br />10:20-11:10</th>
+          <th>III <br />11:10-12:00</th>
+          <th>12:00-12:40</th>
+          <th>IV <br />12:40-1:30</th>
+          <th>VII <br />1:30-2:20</th>
+          <th>V <br />2:20-3:10</th>
+          <th>VI <br />3:10-4:00</th>
+        </tr>
+        <!-- Monday Row -->
+        <tr>
+          <th>Monday</th>
+          <td>Eng</td>
+          <td>Mat</td>
+          <td>Che</td>
+          <td
+            rowspan="6"
+            style="
+              writing-mode: vertical-lr;
+              text-orientation: upright;
+              font-weight: bold;
+              font-size: 18px;
+            "
+          >
+            LUNCH
+          </td>
+          <td colspan="3">LAB</td>
+          <td>Phy</td>
+        </tr>
+        <!-- Tuesday Row -->
+        <tr>
+          <th>Tuesday</th>
+          <td colspan="3">LAB</td>
+          <td>Eng</td>
+          <td>Che</td>
+          <td>Mat</td>
+          <td>SPORTS</td>
+        </tr>
+        <!-- Wednesday Row -->
+        <tr>
+          <th>Wednesday</th>
+          <td>Mat</td>
+          <td>Phy</td>
+          <td>Eng</td>
+          <td>Che</td>
+          <td colspan="3">LIBRARY</td>
+        </tr>
+        <!-- Thursday Row -->
+        <tr>
+          <th>Thursday</th>
+          <td>Phy</td>
+          <td>Eng</td>
+          <td>Che</td>
+          <td colspan="3">LAB</td>
+          <td>Mat</td>
+        </tr>
+        <!-- Friday Row -->
+        <tr>
+          <th>Friday</th>
+          <td colspan="3">LAB</td>
+          <td>Eng</td>
+          <td>Che</td>
+          <td>Eng</td>
+          <td>Phy</td>
+        </tr>
+        <!-- Saturday Row -->
+        <tr>
+          <th>Saturday</th>
+          <td>Eng</td>
+          <td>Che</td>
+          <td>Mat</td>
+          <td colspan="3">SEMINAR</td>
+          <td>SPORTS</td>
+        </tr>
+      </table>
+    </main>
+
+    <!-- <footer> -->
+      <!-- Image -->
+      <!-- <img src="/images/TimeTable.png" alt="Time Table Example" /> -->
+    <!-- </footer> -->
+  </body>
+</html>

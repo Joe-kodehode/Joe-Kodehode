@@ -1,0 +1,86 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: Times, 'Times New Roman', serif;
+    font-weight: bold;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.header {
+    font-family: 'Caveat', cursive;
+    opacity: 0.80;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg1{
+    background-image: url('/Images/karl-moran-URDWhRXLu7o-unsplash.jpg');
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image: url('/Images/devon-saccente-tlMPK1FVcYY-unsplash.jpg');
+    min-height: 500px;
+}
+.pimg3{
+    background-image: url('/Images/toa-heftiba-dEX9ChBoJzA-unsplash.jpg');
+    min-height: 500px;
+}
+
+.pimg4{
+    background-image: url('/Images/ross-sneddon-YQxbqcGI20g-unsplash.jpg');
+    min-height: 500px;
+}
+
+.pimg5{
+    background-image: url('/Images/jack-foster-WcUArCQXXYE-unsplash.jpg');
+    min-height: 500px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.sectionLight{
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.sectionDark{
+    background-color: #282E34;
+    color: #ddd;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    opacity: 0.80;
+}
+
+.ptext .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+@media(max-width:568px){
+    .pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+        background-attachment: scroll;
+    }
+}

@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    max-width: 50em;
+    margin: 0px auto;
+    padding: 15px;
+}
+
+h1 {
+    background: #f4f4f4;
+}
+
+.intro {
+    margin: 20px 0px;
+    background: #f4f4f4;
+}
+
+ul, ol {
+    padding: 30px;
+}
+
+li {
+    padding: 2px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    justify-content: space-between;
+    background: #f4f4f4;
+}
+
+h2 {
+    margin-top: 50px;
+    background: #f4f4f4;
+}
+
+h3 {
+    margin: 20px;
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+/* Style-type */
+.styletype-1 {
+    list-style-type: circle;
+}
+.styletype-2 {
+    list-style-type: square;
+}
+.styletype-3 {
+    list-style-type: lower-greek;
+}
+.styletype-4 {
+    list-style-type: decimal-leading-zero;
+}
+
+.inside-outside {
+    border: 2px black solid;
+}
+
+
+/* Gradients */
+.gradient-1 {
+    list-style-image: linear-gradient(to left bottom, red, blue);
+}
+.gradient-2 {
+    list-style-image: linear-gradient(to left bottom, green, black);
+}
+.gradient-3 {
+    list-style-image: linear-gradient(to left bottom, purple, yellow);
+}
+.gradient-4 {
+    list-style-image: linear-gradient(to left bottom, brown, white);
+}
+
+
+/* Pictures */
+.picture-1 {
+    list-style: none;
+}
+
+.picture-1 li:before {
+    content: "🐷";
+}
+
+.picture-2 {
+    list-style: none;
+}
+
+.picture-2 li:before {
+    content: "🐹";
+
+}
+
+.picture-3 {
+    list-style: none;
+}
+
+.picture-3 li:before {
+    content: "🐔";
+
+}
+.picture-4 {
+    list-style: none;
+}
+
+.picture-4 li:before {
+    content: "🐸";
+
+}
+
+/* Color & Border */
+.color-1 {
+background: blueviolet;
+}
+.color-2 {
+background: gold;
+}
+.color-3 {
+border-top: 5px solid red;
+border-bottom: 5px solid red;
+}
+.color-4 {
+border: dotted 5px green;
+}

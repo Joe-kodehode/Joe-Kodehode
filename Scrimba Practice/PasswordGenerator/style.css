@@ -1,0 +1,93 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #1f2937;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 0 auto;
+  width: 370px;
+}
+
+h1 {
+  width: 354px;
+  height: 80px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+}
+
+p {
+  width: 372px;
+  height: 28px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #d5d4d8;
+  margin-bottom: 50px;
+}
+
+.green {
+  color: #10b981;
+}
+
+button {
+  padding: 9px 17px 9px 15px;
+  width: 223px;
+  height: 42px;
+  background: #10b981;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  color: #fff;
+}
+
+/* 
+.slider {
+
+} */
+
+hr {
+  width: 446px;
+  height: 0px;
+  border: 1px solid #2f3e53;
+}
+
+section {
+  margin: 0 auto;
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section p {
+  color: #55f991;
+  margin: 20px;
+  background: #273549;
+  min-width: 211px;
+  border-radius: 6px;
+  padding: 10px 20px;
+  width: 372px;
+  height: 28px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+#pass1 #pass2 #pass3 #pass4 {
+  padding: 9px 17px 9px 15px;
+  width: 223px;
+  height: 42px;
+  background: #10b981;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  color: #fff;
+}

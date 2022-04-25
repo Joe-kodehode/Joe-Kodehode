@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Text Formatting</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-size: 30px;
+      }
+
+      h1,
+      p {
+        text-align: center;
+        margin: 20px;
+      }
+
+      .container {
+        margin: 50px;
+        padding: 20px;
+        text-align: center;
+        border: 2px black solid;
+        border-radius: 15px;
+      }
+
+      .example {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: darkred;
+        margin: 60px;
+      }
+
+      kbd {
+        border: black 2px solid;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px darkslategray;
+        padding: 10px 20px;
+      }
+
+      .no_css kbd {
+        border: none;
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Text Formatting</h1>
+      <p>
+        Welcome! In this page I will give examples of different ways you can
+        format text using a variety of HTML elements.
+      </p>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2>Pre element</h2>
+        <p>
+          The first example uses the <code>&lt;pre&gt;</code> element, this
+          element is similar to the paragraph element, however the difference is
+          that it will not ignore<em> 'white space'.</em>
+        </p>
+        <p class="example">example using <code>&lt;pre&gt;</code>:</p>
+        <figure role="img" aria-labelledby="handsome-man">
+          <pre>
+            ⠀⠀⠀⣀⣀⣀⣠⣤⣤⣄⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠤⠖⠊⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⠲⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⡤⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢢⠀⠀⠀⠀⠀⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣸⠁⠀⠀⠀⠀⠀⠀⠀⠱⡀⠀⠀⠀⠀⠀⠀⠀⡀⠈⠀⡀⠀⠀⠀⠈⡇⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⠀⠀⠀⠀⠀⠀⠀⠘⡆⡜⠁⠀⠀⠀⠀⢧⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠸⡀⠀⠀⠀⠀⠀⣀⣤⡂⠀⠇⠱⠀⡀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢇⠀⠀⠀⠀⠀⠀⠀⠀⠈⢄⡀⢠⣟⢭⣥⣤⠽⡆⠀⡶⣊⣉⣲⣤⢀⡞⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⡀⠀⠐⠂⠘⠄⣈⣙⡡⡴⠀⠀⠙⣄⠙⣛⠜⠘⣆⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⢦⡀⠀⠀⠀⢸⠁⠀⠀⠀⠀⠀⠀⠄⠊⠀⠀⠀⠀⡸⠛⠀⠀⠀⢸⠆⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠈⠓⠦⢄⣘⣄⠀⠀⠀⠀⠀⠀⠀⡠⠀⠀⠀⠀⣇⡀⠀⠀⣠⠎⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠁⠈⡟⠒⠲⣄⠀⠀⡰⠇⠖⢄⠀⠀⡹⡇⢀⠎⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⡇⠀⠀⠹⠀⡞⠀⠀⢀⠤⣍⠭⡀⢱⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⣀⣀⣠⠞⠀⠀⢠⡇⠀⠀⠀⠀⠁⠀⢴⠥⠤⠦⠦⡼⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣀⣤⣴⣶⣿⣿⡟⠁⠀⠋⠀⠀⠀⢸⠁⠀⠀⠀⠀⠀⠀⠀⠑⣠⢤⠐⠁⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠬⠥⣄⠀⠀⠈⠲⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⠀⠀⢀⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠒⠦⠤⢤⣄⣀⣠⠤⢿⣶⣶⣿⣿⣿⣶⣤⡀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡼⠁⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣄⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣦⣤⣤⣀⣀⣀⣀⣀⣀⣀⣤⣤⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀
+        </pre
+          >
+          <figcaption id="handsome-man">
+            An ascii art of a very handsome man.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="container">
+        <h2>Bold & Strong</h2>
+        <p>
+          The Bold and Strong elements do essentially the same thing, make the
+          text bold. The key difference is that the Strong element will be read
+          out in a stronger tone when using a screen-reader. For this reason,
+          Strong is typically preferred in programming.
+        </p>
+        <p>Bold is represented by <code>&lt;b&gt;</code></p>
+        <p>Strong is represented by <code>&lt;strong&gt;</code></p>
+        <p class="example">
+          example using <code>&lt;b&gt;</code> and <code>&lt;strong&gt;</code>:
+        </p>
+        <b>This line is written using <code>&lt;b&gt;</code></b
+        ><br /><br />
+        <strong>This line is written using <code>&lt;strong&gt;</code></strong>
+      </div>
+
+      <div class="container">
+        <h2>Italic & Emphasis</h2>
+        <p>
+          Similar to Bold and Strong, Italic and Emphasis are essentially the
+          same however Emphasis will be read with more emphasis by the
+          screen-reader.
+        </p>
+        <p>Italic is represented by <code>&lt;i&gt;</code></p>
+        <p>Emphasis is represented by <code>&lt;em&gt;</code></p>
+        <p class="example">
+          example using <code>&lt;i&gt;</code> and <code>&lt;em&gt;</code>:
+        </p>
+        <i>This line is written using <code>&lt;i&gt;</code></i
+        ><br /><br />
+        <em>This line is written using <code>&lt;em&gt;</code></em>
+      </div>
+
+      <div class="container">
+        <h2>Mark</h2>
+        <p>The Mark element will highlight the text which it surrounds.</p>
+        <p class="example">example using <code>&lt;mark&gt;</code>:</p>
+        <p>
+          <mark
+            >These words have been highlighted using
+            <code>&lt;mark&gt;</code>.</mark
+          >
+        </p>
+      </div>
+
+      <div class="container">
+        <h2>Small</h2>
+        <p>
+          The small element will change the text size to be smaller than the
+          default text size.
+        </p>
+        <p class="example">example using <code>&lt;small&gt;</code>:</p>
+        <small>This text is smaller than usual.</small>
+      </div>
+
+      <div class="container">
+        <h2>Deleted Text</h2>
+        <p>
+          The name of this element is a little misleading as it won't actually
+          delete the contents within, rather it will strike it out.
+        </p>
+        <p>Deleted text is represented by <code>&lt;del&gt;</code></p>
+        <p class="example">example using <code>&lt;del&gt;</code>:</p>
+        <del
+          >This text has been stricken out using <code>&lt;del&gt;.</code></del
+        >
+      </div>
+
+      <div class="container">
+        <h2>Inserted Text</h2>
+        <p>Inserted text will add an underline to the text it surrounds</p>
+        <p>Inserted Text is represented by <code>&lt;ins&gt;</code></p>
+        <p class="example">example using <code>&lt;ins&gt;</code>:</p>
+        <ins>This text is underlined.</ins>
+      </div>
+
+      <div class="container">
+        <h2>Subscript & Superscript</h2>
+        <p>
+          Subscript and Superscript are useful when writing algebra and
+          scientific terms to make numbers and letters appear above and below
+          their regular place.
+        </p>
+        <p>Subscript is represented by <code>&lt;sub&gt;</code></p>
+        <p>Superscript is represented by <code>&lt;sup&gt;</code></p>
+        <p class="example">
+          example using <code>&lt;sub&gt;</code> & <code>&lt;sup&gt;</code>:
+        </p>
+        <p>Subscript: H<sub>2</sub>O</p>
+        <p>Superscript: 5<sup>2</sup></p>
+      </div>
+
+      <div class="container">
+        <h2>Keyboard</h2>
+        <p>
+          The keyboard element can be used to represent the keys of a keyboard.
+        </p>
+        <p>Keyboard is represented by <code>&lt;kbd&gt;</code></p>
+        <p class="example">example using <code>&lt;kbd&gt;</code>:</p>
+        <p class="no_css">
+          hold <kbd>shift</kbd> + <kbd>alt</kbd> and press <kbd>&#8595;</kbd> to
+          duplicate.
+        </p>
+        <p>You can make this look better by adding a border and shadow.</p>
+        <br />
+        <p>
+          Hold <kbd>shift</kbd> + <kbd>alt</kbd> and press <kbd>&#8595;</kbd> to
+          duplicate your current line or highlighted text.
+        </p>
+      </div>
+
+      <div class="container">
+        <h2>Variable</h2>
+        <p>
+          The Variable element can be used to show mathematical expressions.
+        </p>
+        <p>Variable is represented by <code>&lt;var&gt;</code></p>
+        <p class="example">example using <code>&lt;var&gt;</code>:</p>
+        <p>
+          <var>X = MC<sup>2</sup></var>
+        </p>
+      </div>
+
+      <div class="container">
+        <h2>Sample</h2>
+        <p>
+          The Sample element will show sample output from computer programs such
+          as error messages.
+        </p>
+        <p>Sample is represented by <code>&lt;samp&gt;</code></p>
+        <p class="example">example using <code>&lt;samp&gt;</code>:</p>
+        <p>
+          <samp
+            >An unexpected example of <code>&lt;samp&gt;</code> has
+            occoured.</samp
+          >
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

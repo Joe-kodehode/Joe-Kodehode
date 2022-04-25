@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Inter:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Generate a <span class="green">random password</span></h1>
+      <p>Never use an insecure password again.</p>
+      <button id="generate" onclick="generatePasswords()">
+        <img
+          src="/images/Icon.png"
+          alt="Lightning Bolt Icon"
+        />&nbsp;&nbsp;&nbsp; Generate passwords
+      </button>
+      <input
+        type="range"
+        min="4"
+        max="10"
+        step="1"
+        value="7"
+        id="slider"
+        oninput="updatePassLength()"
+      />
+      <p id="pass-length"></p>
+    </header>
+    <br />
+    <hr />
+    <section class="results">
+      <p id="pass1" onclick="copyToClipboard(this)">Password 1</p>
+
+      <p id="pass2" onclick="copyToClipboard(this)">Password 2</p>
+
+      <p id="pass3" onclick="copyToClipboard(this)">Password 3</p>
+
+      <p id="pass4" onclick="copyToClipboard(this)">Password 4</p>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.emoji {
+  font-size: 10rem;
+  cursor: pointer;
+  user-select: none;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+}
+
+.hover {
+  transform: scale(2);
+}
+
+.normal {
+  display: none;
+}
+
+.eyes {
+  display: none;
+}
+
+.mouth {
+  display: none;
+}
+
+.ears {
+  display: none;
+}
+
+.active {
+  display: block;
+}

@@ -1,0 +1,54 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: inter, sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    background: linear-gradient(to right, #585DFE, #FB3796);
+    height: 45vh;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 22px;
+    line-height: 38px;
+    margin-top: 1.8em;
+}
+
+input {
+    height: 110px;
+    width: 110px;
+    font-size: 97.57px;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0.50;
+}
+
+
+/* Conversion results */
+main {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    background: #1F2937;
+    height: 55vh;
+    font-weight: 600;
+}
+
+main p {
+    color: #D2D2D2;
+    font-weight: 400;
+}

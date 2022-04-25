@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Converter</title>
+</head>
+<body>
+    <header>
+        <!-- Title -->
+        <h1>Metric/Imperial unit conversion</h1>
+
+        <!-- Input -->
+        <!-- <p id="input">5</p> -->
+        <input type="number" id="input" placeholder="1">
+    </header>
+
+    <main>
+        <!-- Length -->
+        <section class="box">
+            <h2>Length (Meter/Feet)</h2>
+            <p id="lengthOutput">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+        </section>
+
+        <!-- Volume -->
+        <section class="box">
+            <h2>Volume (Liters/Gallons)</h2>
+            <p id="volumeOutput">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
+        </section>
+
+        <!-- Mass -->
+        <section class="box">
+            <h2>Mass (Kilograms/Pounds)</h2>
+            <p id="massOutput">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+        </section>
+    </main>
+
+</body>
+<script src="main.js"></script>
+</html>

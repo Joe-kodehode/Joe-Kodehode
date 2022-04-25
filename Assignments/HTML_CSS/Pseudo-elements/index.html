@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        text-align: center;
+      }
+
+      h2 {
+        margin-top: 60px;
+      }
+
+      .first-line::first-line {
+        font-size: 20px;
+        font-weight: bold;
+        color: red;
+        background-color: antiquewhite;
+        word-spacing: 0.8em;
+        letter-spacing: 0.5em;
+        line-height: 2em;
+      }
+
+      .first-letter::first-letter {
+        font-size: 50px;
+        margin: 10px;
+        padding: 5px;
+        color: blue;
+        background-color: black;
+        border: 5px purple groove;
+      }
+
+      .instruments li::before {
+        content: "♪ ♫ ♪ ♫ ";
+      }
+
+      .cards li::after {
+        content: " ♥ ♦ ♣ ♠";
+      }
+
+      .instruments li::marker {
+        color: blueviolet;
+        font-size: 30px;
+      }
+
+      ::selection {
+        color: red;
+        background: black;
+      }
+
+      ::placeholder {
+        font-size: 20px;
+        color: yellow;
+        background: green;
+        text-transform: uppercase;
+      }
+
+      /* vendor prefix example */
+      ::-webkit-input-placeholder {
+        font-size: 20px;
+        color: yellow;
+        background: green;
+        text-transform: uppercase;
+      }
+    </style>
+    <title>Pseudo-elements</title>
+  </head>
+  <body>
+    <h1>Pseudo-elements</h1>
+
+    <!-- first-line -->
+    <h2>First-line</h2>
+    <p class="first-line">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+      doloribus, ex asperiores eligendi numquam nisi architecto libero assumenda
+      adipisci, deleniti sit veniam, consequatur aut tenetur dignissimos! Dolore
+      ex non possimus.
+    </p>
+
+    <!-- first-letter -->
+    <h2>First-letter</h2>
+    <p class="first-letter">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+      nulla!
+    </p>
+
+    <!-- Combinations -->
+    <h2>Combining Pseudo-elements</h2>
+    <p class="first-letter first-line">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia provident
+      voluptates repellendus asperiores in aliquid eos sapiente aspernatur quod
+      autem.
+    </p>
+
+    <!-- Before -->
+    <h2>Before (& Marker)</h2>
+    <ul class="instruments">
+      <li>Guitar</li>
+      <li>Piano</li>
+      <li>Drums</li>
+    </ul>
+
+    <!-- After -->
+    <h2>After</h2>
+    <ul class="cards">
+      <li>Blackjack</li>
+      <li>Poker</li>
+      <li>Solitare</li>
+    </ul>
+
+    <h2>Placeholder</h2>
+    <label for="textarea">Always label your inputs :)</label><br />
+    <textarea
+      placeholder="Enter your text here!"
+      name="placeholder"
+      id="placeholder"
+      cols="30"
+      rows="10"
+    ></textarea>
+  </body>
+</html>

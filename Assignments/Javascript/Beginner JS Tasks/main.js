@@ -100,7 +100,7 @@ let numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // Del 4:
 // 8. sett alle tallene utenom det første og siste til å være det samme tallet et tall om gangen
 
-for (i = 1; i <= 8; i++) {
+for (i = 1; i < numberArray.length - 1; i++) {
   numberArray.splice(i, 1, 5);
   console.log(numberArray);
 }

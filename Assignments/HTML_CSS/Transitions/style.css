@@ -5,13 +5,114 @@
 
 .container {
   display: flex;
-  flex-direction: row;
-  margin: 20px;
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+  margin: 0px auto;
 }
 
 .box {
-  width: 50px;
-  height: 25px;
-  margin: 0, auto;
+  width: 200px;
+  height: 50px;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 20px;
+  transition: width 2s;
+}
+
+.box1 {
+  background: red;
+  transition-timing-function: ease;
+}
+
+.box2 {
+  background: blue;
+  transition-timing-function: linear;
+}
+
+.box3 {
+  background: green;
+  transition-timing-function: ease-in;
+}
+
+.box4 {
+  background: yellow;
+  transition-timing-function: ease-out;
+}
+
+.box5 {
+  background: purple;
+  transition-timing-function: ease-in-out;
+}
+
+.box6 {
+  background: orange;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.box1:hover {
+  background: red;
+  width: 100%;
+  transition-timing-function: ease;
+  cursor: pointer;
+}
+
+.box2:hover {
+  background: blue;
+  width: 100%;
+}
+
+.box3:hover {
+  background: green;
+  width: 100%;
+}
+
+.box4:hover {
+  background: yellow;
+  width: 100%;
+}
+
+.box5:hover {
+  background: purple;
+  width: 100%;
+}
+
+.box6:hover {
+  background: orange;
+  width: 80%;
+}
+
+.rotate1 {
+  width: 150px;
+  height: 150px;
+  background: red;
+  transition: all 2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.rotate1:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(720deg);
+  background: grey;
+  border-radius: 50%;
+}
+
+.rotate2 {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  transition: all 2s ease-in-out;
+  border-radius: 50%;
+}
+
+.rotate2:hover {
+  width: 200px;
+  height: 200px;
+  transform: rotate(720deg);
+  background: black;
+  border-radius: 0%;
 }

@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  background: url("./images/PoliceCar.jpg") no-repeat center center/cover;
+  overflow: hidden;
+}
+
+.lights {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  animation: lights 3s ease-in infinite;
+}
+
+.scroll {
+  position: absolute;
+  width: 100%;
+  background-color: blue;
+}
+
+.scroll p {
+  transform: translateX(-100%);
+  text-align: left;
+  font-size: 100px;
+  padding: 40px;
+  animation: scroll 8s linear infinite;
+  font-weight: bold;
+}
+
+.tape {
+  transform: rotate(-5deg);
+  top: 75%;
+  width: 110%;
+  left: -5%;
+  position: absolute;
+  font-weight: bold;
+  animation: tape 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
+}
+
+.tape p {
+  height: 100px;
+  text-align: center;
+  background-color: hsl(70, 96%, 45%);
+  font-size: 90px;
+  padding: 5px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes tape {
+  0%,
+  100% {
+    transform: translate3d(0, -15px, 0);
+    transform: rotate(5deg);
+    filter: blur(0.1rem);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+    transform: rotate(4.5deg);
+    filter: blur(0.5rem);
+  }
+}
+
+@keyframes lights {
+  0% {
+    background-color: red;
+    opacity: 50%;
+  }
+  50% {
+    background-color: blue;
+    opacity: 50%;
+  }
+  100% {
+    background-color: red;
+    opacity: 50%;
+  }
+}

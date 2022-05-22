@@ -5,13 +5,64 @@ body {
   background-color: rgb(247, 228, 81);
 }
 
+.fontPrimary {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
 main {
   text-align: center;
-  border: 1px solid red;
 }
 
 input {
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
-button {
+.list {
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.newItem {
+  height: 40px;
+  list-style: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-top: 5px;
+}
+
+p {
+  line-height: 0px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  background: yellow;
+  border-radius: 10px;
+}
+
+.deleteBtn {
+  background: red;
+  justify-content: flex-end;
+}
+
+.sortBtn {
+  background: green;
+}
+.delAllBtn {
+  background: red;
+}
+
+footer {
+  padding: 20px;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }

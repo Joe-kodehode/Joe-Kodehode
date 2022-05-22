@@ -9,20 +9,42 @@
   </head>
   <body>
     <main>
-      <h1>ToDo List</h1>
-      <input
-        type="text"
-        class="input fontPrimary"
-        placeholder="Write your ToDo here"
-      />
-      <button class="btn toDoBtn fontPrimary">Add ToDo</button>
-      <ul class="list fontPrimary">
-        <li></li>
-      </ul>
-      <footer>
-        <button class="btn sortBtn fontPrimary">Sort</button>
-        <button class="btn delAllBtn fontPrimary">Delete All</button>
-      </footer>
+      <!-- ToDo List -->
+      <div class="toDoContainer">
+        <h1>ToDo List</h1>
+        <input
+          type="text"
+          class="input toDoInput fontPrimary"
+          placeholder="Write your ToDo here"
+        />
+        <button class="btn toDoBtn fontPrimary">Add ToDo</button>
+        <ul class="list toDoList fontPrimary">
+          <li></li>
+        </ul>
+        <footer>
+          <button class="btn sortBtn fontPrimary">Sort</button>
+          <button class="btn delAllToDoBtn fontPrimary">Delete All</button>
+        </footer>
+      </div>
+
+      <!-- Shopping List -->
+      <div class="shoppingContainer">
+        <h1>Shopping List</h1>
+        <input
+          type="text"
+          class="shoppingInput input fontPrimary"
+          placeholder="Write your shopping item here"
+        />
+        <button class="btn shoppingBtn fontPrimary">Add Item</button>
+        <ul class="shoppingList list fontPrimary">
+          <li></li>
+        </ul>
+        <footer>
+          <button class="btn sortBtn fontPrimary">Sort</button>
+          <button class="btn delAllShoppingBtn fontPrimary">Delete All</button>
+        </footer>
+      </div>
+
       <script src="main.js"></script>
     </main>
   </body>

@@ -1,17 +1,31 @@
+/* Global Styling */
+
 body {
   margin: 10px;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(247, 228, 81);
+  background-color: rgb(81, 131, 247);
 }
 
+main {
+  text-align: center;
+  display: flex;
+}
+
+/* Font styling */
 .fontPrimary {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
 }
 
-main {
-  text-align: center;
+.shoppingContainer {
+  width: 50%;
+  border: 1px solid black;
+  height: 100%;
+}
+
+.toDoContainer {
+  width: 50%;
 }
 
 input {
@@ -33,10 +47,16 @@ input {
   justify-content: space-between;
   width: 300px;
   margin-top: 5px;
+  background-color: rgb(179, 230, 255);
+  border-radius: 10px;
 }
 
 p {
   line-height: 0px;
+}
+
+ul {
+  padding: 0px;
 }
 
 .btn {
@@ -46,6 +66,7 @@ p {
   border-radius: 10px;
 }
 
+/* Button Styling */
 .deleteBtn {
   background: red;
   justify-content: flex-end;
@@ -54,12 +75,12 @@ p {
 .sortBtn {
   background: green;
 }
-.delAllBtn {
+.delAllToDoBtn {
   background: red;
 }
 
 footer {
-  padding: 20px;
+  padding: 20px 0px;
   position: fixed;
   bottom: 0px;
   display: flex;

@@ -1,0 +1,39 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 24px;
+  height: 100vh;
+  background: linear-gradient(blue, white);
+  /* background: blue; */
+}
+
+.picBtn {
+  padding: 10px 20px;
+}
+
+.input {
+  margin: 0 auto;
+  width: 100px;
+  height: 30px;
+}
+
+.hero {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 400px;
+  height: 250px;
+}
+
+#randomImg {
+  margin: 20px;
+  box-shadow: 10px 10px 5px black;
+}
+
+.blurIntensity {
+  width: 50px;
+  height: 30px;
+}

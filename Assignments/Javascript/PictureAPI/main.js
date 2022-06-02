@@ -10,8 +10,19 @@ blur.addEventListener("click", () => {
     : (blurIntensity.disabled = true);
 });
 
+// event listener to run generatePic function when enter key is pressed
+document.body.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    generatePic();
+  }
+  console.log(e.key);
+});
+
 // Event listener to register click on new picture button
-document.querySelector(".picBtn").addEventListener("click", () => {
+document.querySelector(".picBtn").addEventListener("click", generatePic);
+
+// Function for generating picture
+function generatePic() {
   // If there is already an image, it is removed before generating a new one
   if (document.querySelector("#randomImg")) {
     document.querySelector("#randomImg").remove();
@@ -45,4 +56,4 @@ document.querySelector(".picBtn").addEventListener("click", () => {
     img.src = res.url;
     document.querySelector("body").append(img);
   });
-});
+}

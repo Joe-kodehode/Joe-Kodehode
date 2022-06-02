@@ -6,11 +6,14 @@ body {
   font-size: 24px;
   height: 100vh;
   background: linear-gradient(blue, white);
-  /* background: blue; */
 }
 
 .picBtn {
   padding: 10px 20px;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 20px;
 }
 
 .input {

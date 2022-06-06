@@ -18,32 +18,34 @@
           placeholder="Write your ToDo here"
         />
         <button class="btn toDoBtn fontPrimary">Add ToDo</button>
-        <ul class="list toDoList fontPrimary">
-          <li></li>
-        </ul>
-        <footer>
-          <button class="btn sortBtn fontPrimary">Sort</button>
-          <button class="btn delAllToDoBtn fontPrimary">Delete All</button>
-        </footer>
+        <ul class="list toDoList fontPrimary"></ul>
       </div>
 
       <!-- Shopping List -->
       <div class="shoppingContainer">
         <h1>Shopping List</h1>
+        <input type="number" value="1" class="quantity input fontPrimary" />
+        <p class="inline fontPrimary">x</p>
         <input
           type="text"
           class="shoppingInput input fontPrimary"
           placeholder="Write your shopping item here"
         />
         <button class="btn shoppingBtn fontPrimary">Add Item</button>
-        <ul class="shoppingList list fontPrimary">
-          <li></li>
-        </ul>
-        <footer>
-          <button class="btn sortBtn fontPrimary">Sort</button>
-          <button class="btn delAllShoppingBtn fontPrimary">Delete All</button>
-        </footer>
+        <ul class="shoppingList list fontPrimary"></ul>
       </div>
+
+      <!-- Footer (delete all / sort buttons) -->
+      <footer>
+        <div class="toDoFooter">
+          <button class="btn delAllToDoBtn fontPrimary">Delete All</button>
+          <button class="btn sortToDo fontPrimary">Sort</button>
+        </div>
+        <div class="shoppingFooter">
+          <button class="btn delAllShoppingBtn fontPrimary">Delete All</button>
+          <button class="btn sortShopping fontPrimary">Sort</button>
+        </div>
+      </footer>
 
       <script src="main.js"></script>
     </main>

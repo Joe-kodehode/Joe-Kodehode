@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture API</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Picture Generator</h1>
+    <div class="hero">
+      <div class="widthContainer">
+        <label for="width">Width</label>
+        <input type="number" class="input width" value="300" />
+      </div>
+      <div class="heightContainer">
+        <label for="height">Height</label>
+        <input type="number" class="input height" value="300" />
+      </div>
+      <div class="grayscaleContainer">
+        <label for="grayscale">Monochrome</label>
+        <input
+          type="checkbox"
+          class="grayscale"
+          name="filter"
+          value="grayscale"
+        />
+      </div>
+      <div class="blurContainer">
+        <label for="blur">Blur</label>
+        <input type="checkbox" class="blur" name="filter" value="blur" />
+        <label for="blurIntensity">Intensity: </label>
+        <input
+          type="number"
+          class="blurIntensity"
+          value=""
+          placeholder="1-10"
+          min="1"
+          max="10"
+          disabled
+        />
+      </div>
+      <button class="picBtn">New Picture</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

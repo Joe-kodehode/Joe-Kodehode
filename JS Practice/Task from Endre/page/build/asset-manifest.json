@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Joe-Kodehode/JS%20Practice/Task%20from%20Endre/page/static/css/main.073c9b0a.css",
-    "main.js": "/Joe-Kodehode/JS%20Practice/Task%20from%20Endre/page/static/js/main.ff6c58ee.js",
-    "index.html": "/Joe-Kodehode/JS%20Practice/Task%20from%20Endre/page/index.html",
-    "main.073c9b0a.css.map": "/Joe-Kodehode/JS%20Practice/Task%20from%20Endre/page/static/css/main.073c9b0a.css.map",
-    "main.ff6c58ee.js.map": "/Joe-Kodehode/JS%20Practice/Task%20from%20Endre/page/static/js/main.ff6c58ee.js.map"
+    "main.css": "/Joe-Kodehode/JS%20Practice/Task%20from%20Endre/page/build/static/css/main.073c9b0a.css",
+    "main.js": "/Joe-Kodehode/JS%20Practice/Task%20from%20Endre/page/build/static/js/main.ff6c58ee.js",
+    "index.html": "/Joe-Kodehode/JS%20Practice/Task%20from%20Endre/page/build/index.html",
+    "main.073c9b0a.css.map": "/Joe-Kodehode/JS%20Practice/Task%20from%20Endre/page/build/static/css/main.073c9b0a.css.map",
+    "main.ff6c58ee.js.map": "/Joe-Kodehode/JS%20Practice/Task%20from%20Endre/page/build/static/js/main.ff6c58ee.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",

@@ -25,4 +25,3 @@ export default function Header() {
     </StyledHeader>
   );
 }
-console.log(Header);

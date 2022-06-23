@@ -59,6 +59,9 @@ export const AutoCounter = () => {
     setTimeout(() => {
       setCountNum(countNum + 1);
     }, 1000);
+    return function cleanup() {
+      console.log("Exited the component/app");
+    };
   }, [countNum]);
 
   return (

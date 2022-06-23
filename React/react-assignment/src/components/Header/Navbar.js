@@ -33,7 +33,7 @@ export default function Navbar() {
         <StyledLink to="/Home">Home</StyledLink>
         <StyledLink to="/Counter">Counter</StyledLink>
         <StyledLink to="/Images">Images</StyledLink>
-        <StyledLink to="/About">About</StyledLink>
+        <StyledLink to="/API">API</StyledLink>
       </StyledUl>
     </StyledNav>
   );

@@ -10,7 +10,7 @@ function App() {
   };
 
   function calculate() {
-    setOutput([...input].reduce((p, a) => p + Number(a), 0));
+    setOutput([...input].reduce((p, a) => +a + p, 0));
   }
 
   return (

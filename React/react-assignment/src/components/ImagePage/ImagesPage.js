@@ -15,21 +15,37 @@ const Container = styled.div`
   width: 100%;
 `;
 
-const User = {
-  name: "Joe",
-  age: 34,
-  location: "Stavanger",
-};
-
-export default function Images(user) {
+function UserComponent({ userObj }) {
   return (
     <>
-    function user(props){
-      return(
-      <h1>Welcome, {user.name}</h1>
+      <h1>Welcome, {userObj.name}</h1>
       <p>
-        I see you are {user.age} and located in {user.location}
-      </p>)}
+        I see you are {userObj.age} and located in {userObj.location}
+      </p>
+    </>
+  );
+}
+
+const users = [
+  {
+    name: "Joe",
+    age: 34,
+    location: "Stavanger",
+  },
+  {
+    name: "Kevin",
+    age: 67,
+    location: "Bergen",
+  },
+];
+
+export default function Images() {
+  return (
+    <>
+      {users.map((e) => (
+        <UserComponent userObj={e} />
+      ))}
+
       <Container>
         <BusinessImg src={Business1} alt="people doing business" />
         <BusinessImg src={Business2} alt="people doing business" />

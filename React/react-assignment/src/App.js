@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/HomePage";
 import { Footer } from "./components/Footer";
 import API from "./components/API/APIPage";
-import Images from "./components/ImagePage/ImagesPage";
+import Props from "./components/Props/PropsPage";
 import Counter from "./components/Counter/CounterPage";
 import "./App.css";
 
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="*" element={<Home />} />
           <Route path="/API" element={<API />} />
-          <Route path="/Images" element={<Images />} />
+          <Route path="/Props" element={<Props />} />
           <Route path="/Counter" element={<Counter />} />
         </Routes>
       </main>

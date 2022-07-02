@@ -11,6 +11,11 @@ const StyledMain = styled.main`
   padding: 64px;
 `;
 
+const InputContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 export default function API() {
   const [pokeList, setPokeList] = useState([]);
   const [pokeNum, setPokeNum] = useState(3);
@@ -72,7 +77,7 @@ export default function API() {
   return (
     <>
       <h1>Random Pokemon Generator</h1>
-      <div className="inputContainer">
+      <InputContainer>
         <input
           ref={inputEl}
           value={pokeNum}
@@ -96,7 +101,7 @@ export default function API() {
         <Button disabled={isLoading} onClick={() => gottaFetchEm(false)}>
           Fetch 'em all
         </Button>
-      </div>
+      </InputContainer>
       <p>{isLoading && "Loading..."}</p>
       <p>{error}</p>
       <StyledMain>

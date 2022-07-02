@@ -42,7 +42,7 @@ const users = [
   },
 ];
 
-export default function Images() {
+export default function Props() {
   return (
     <>
       {users.map((user) => (

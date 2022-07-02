@@ -43,10 +43,8 @@ export const Toggle = () => {
   return (
     <CounterContainer>
       <h4>On / Off Toggle</h4>
-      <div className="CounterContainer">
-        <p>{toggle ? "true" : "not true"}</p>
-        <StyledButton onClick={() => setToggle(!toggle)}>Toggle</StyledButton>
-      </div>
+      <p>{toggle ? "true" : "not true"}</p>
+      <StyledButton onClick={() => setToggle(!toggle)}>Toggle</StyledButton>
     </CounterContainer>
   );
 };

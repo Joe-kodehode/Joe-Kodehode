@@ -15,12 +15,15 @@ const Container = styled.div`
   width: 100%;
 `;
 
-function UserComponent({ userObj }) {
+function UserComponent({ userObj, number }) {
+  console.log(props);
+  const { name, age, location } = userObj;
   return (
     <>
-      <h1>Welcome, {userObj.name}</h1>
+      <h1>Welcome, {name}</h1>
       <p>
-        I see you are {userObj.age} and located in {userObj.location}
+        I see you are {age} and located in {location}
+        {number}
       </p>
     </>
   );
@@ -42,8 +45,8 @@ const users = [
 export default function Images() {
   return (
     <>
-      {users.map((e) => (
-        <UserComponent userObj={e} />
+      {users.map((user) => (
+        <UserComponent number={1} userObj={user} />
       ))}
 
       <Container>

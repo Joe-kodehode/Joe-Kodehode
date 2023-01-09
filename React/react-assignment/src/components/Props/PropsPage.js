@@ -16,7 +16,6 @@ const Container = styled.div`
 `;
 
 function UserComponent({ userObj, number }) {
-  console.log(props);
   const { name, age, location } = userObj;
   return (
     <>

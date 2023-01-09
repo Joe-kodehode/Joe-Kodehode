@@ -37,3 +37,10 @@ function playSound(drum) {
 
   document.querySelector(`.${drum.type}`).classList.add("animation");
 }
+
+array = ["hello", "my", "name", "is", "joe"];
+
+array.forEach((e, i) => {
+  console.log(e);
+  console.log(i);
+});

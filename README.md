@@ -4,8 +4,8 @@
 </div>
 <h3 align="center">A passionate frontend developer originally from the UK, now living in Norway!</h3>
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Joe-Kodehode&layout=compact&show_icons=true&theme=dark" alt="Top Languages">
+<a align="center" href="https://github.com/anuraghazra/github-readme-stats">
+    <img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Joe-Kodehode&layout=compact&show_icons=true&theme=dark" alt="Top Languages">
   </a>
 
 <div align="center">

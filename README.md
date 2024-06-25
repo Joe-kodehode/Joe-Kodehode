@@ -1,4 +1,7 @@
 <h1 align="center">Hi 👋, I'm Joe</h1>
+<div id="header" align="center">
+  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
+</div>
 <h3 align="center">A passionate frontend developer originally from the UK, now living in Norway!</h3>
 
 <a href="https://github.com/anuraghazra/github-readme-stats">

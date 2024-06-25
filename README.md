@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Joe</h1>
 <div id="header" align="center">
-  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjNtYjg1OWJrb2V2bDJwb3FucHBncTg5aDd1b2s4ZnY2MjQ4Mms5dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.webp" width="100"/>
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjNtYjg1OWJrb2V2bDJwb3FucHBncTg5aDd1b2s4ZnY2MjQ4Mms5dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.webp" width="300"/>
 </div>
 <h3 align="center">A passionate frontend developer originally from the UK, now living in Norway!</h3>
 

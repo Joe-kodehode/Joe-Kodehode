@@ -1,13 +1,8 @@
-## Hi there 👋
-
 <h1 align="center">Hi 👋, I'm Joe</h1>
 <h3 align="center">A passionate frontend developer originally from the UK, now living in Norway!</h3>
 
-<p align="left">
-</p>
-
 <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=__________&layout=compact&show_icons=true&theme=dark" alt="Top Languages">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Joe-Kodehode&layout=compact&show_icons=true&theme=dark" alt="Top Languages">
   </a>
 
 <h3 align="left">Languages and Tools:</h3>
